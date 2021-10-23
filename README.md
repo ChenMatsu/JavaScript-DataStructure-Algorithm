@@ -19,3 +19,21 @@
   - Different machines will record different times
   - Same machines will **also** record different times
   - Solution: Determine by **Counting Operations**
+---
+
+- BigO Notation
+  - BigO Notation is a way to formalize fuzzy counting. It allows us to talk formmlay about algorithm
+  - Definition: An algorithm is **O(f(n))** if the number of simple operations has to do is less than f(n)
+- BigO Thumb Rules
+  - Consts does not matter
+    - O(2n) => O(n)
+    - O(500) => O(1)
+    - O(13n^2) => O(n^2)
+    - O(n + 10) => O(n)
+    - O(1000n + 50) => O(n)
+    - O(n^2 + 5n + 8) => O(n^2)
+- BigO Shortcuts
+  - Arithmetic operations are constant
+  - Variable assignments are constant
+  - Accessing elements in array or object is constant
+  - Complexity is the length of the loop times the compleixty inside of the loop

@@ -8,7 +8,7 @@ const { performance } = require('perf_hooks');
 // Matsu: Import for using user input
 const prompt = require('prompt');
 
-// Method-1
+// Method-1 => O(5n+2) === O(n)
 // Counting Operations:  
 //  => i > 1(initialize) + 1 Assignement + n comparions + n * 1 Addition and Assignment 
 //  => total > n * 1 Addition and 1(initialize) + n * 1 Assignment
@@ -22,7 +22,7 @@ const addUpToMethodOne = (n) => {
   return total;
 };
 
-// Method-2
+// Method-2 => O(1)
 // Counting Operations: 1 Multiplication + 1 Addition + 1 Division 
 //  => 3 Simple Operations Regarding of the Size of N
 const addUpToMethodTwo = (n) => {
