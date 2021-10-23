@@ -1,0 +1,21 @@
+### 01-BigO-Notation  
+
+- Objective:
+  - What BigO Notaion is?
+  - What Logarithm is?
+  - BigO Expressions
+  - "Time Complexity" and "Space Complexity"
+  - Evaluate using BigO Noation
+- Concerns:
+  - Have a **precise** vocabulary to talk about code performs
+  - Useful for discussing **trade-offs** between different approaches
+  - Find pain points in applications
+---
+- What Does Better Mean?
+  - Faster? 
+  - Less Memory-Intensive?
+  - More Readable?
+- Problem with Time
+  - Different machines will record different times
+  - Same machines will **also** record different times
+  - 

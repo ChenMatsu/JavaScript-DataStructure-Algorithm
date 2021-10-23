@@ -1,0 +1,23 @@
+{
+  "name": "javascript-datastructure-algorithm",
+  "version": "1.0.0",
+  "description": "- Objective:\r   - What BigO Notaion is?\r   - What Logarithm is?\r   - BigO Expressions\r   - \"Time Complexity\" and \"Space Complexity\"\r   - Evaluate using BigO Noation\r - Concerns:\r   - Have a **precise** vocabulary to talk about code performs\r   - Useful for discussing **trade-offs** between different approaches\r   - Find pain points in applications\r ---\r - What Does Better Mean?\r   - Faster?\r   - Less Memory-Intensive?\r   - More Readable?",
+  "main": "sum.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/HiiragiMatu/JavaScript-DataStructure-Algorithm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HiiragiMatu/JavaScript-DataStructure-Algorithm/issues"
+  },
+  "homepage": "https://github.com/HiiragiMatu/JavaScript-DataStructure-Algorithm#readme",
+  "dependencies": {
+    "performance": "^1.4.0",
+    "prompt": "^1.2.0"
+  }
+}
