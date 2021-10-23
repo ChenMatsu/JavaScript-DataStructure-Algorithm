@@ -18,4 +18,4 @@
 - Problem with Time
   - Different machines will record different times
   - Same machines will **also** record different times
-  - 
+  - Solution: Determine by **Counting Operations**

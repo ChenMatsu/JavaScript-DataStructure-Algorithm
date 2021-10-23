@@ -9,6 +9,10 @@ const { performance } = require('perf_hooks');
 const prompt = require('prompt');
 
 // Method-1
+// Counting Operations:  
+//  => i > 1(initialize) + 1 Assignement + n comparions + n * 1 Addition and Assignment 
+//  => total > n * 1 Addition and 1(initialize) + n * 1 Assignment
+//  => n operations Regarding of the Size of N
 const addUpToMethodOne = (n) => {
   let total = 0;
   for (let i = 0; i <= n; i++) {
@@ -19,6 +23,8 @@ const addUpToMethodOne = (n) => {
 };
 
 // Method-2
+// Counting Operations: 1 Multiplication + 1 Addition + 1 Division 
+//  => 3 Simple Operations Regarding of the Size of N
 const addUpToMethodTwo = (n) => {
   return (n * (n + 1)) / 2;
 };
