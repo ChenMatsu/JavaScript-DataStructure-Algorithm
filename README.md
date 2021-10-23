@@ -1,4 +1,4 @@
-### 01-BigO-Notation  
+### 01-BigO-Notation (General Trends)
 
 - Objective:
   - What BigO Notaion is?
@@ -15,7 +15,7 @@
   - Faster? 
   - Less Memory-Intensive?
   - More Readable?
-- Problem with Time
+- Problem with Time => Time Complexity
   - Different machines will record different times
   - Same machines will **also** record different times
   - Solution: Determine by **Counting Operations**
@@ -37,3 +37,18 @@
   - Variable assignments are constant
   - Accessing elements in array or object is constant
   - Complexity is the length of the loop times the compleixty inside of the loop
+
+---
+- Space Complexity(Auxiliary Space Complexity): Use BigO to analyze how much additional memory needed to allocate in order to run 
+  - Most Primitives (Boolean, Numbers, undefined, null) are all constant space
+  - Strings require O(n) space
+  - Reference types are generally O(n)
+
+- Logarithms: a logarithm is the inverse of exponentiation
+  - log_2(8) = 3 <=> 2^3 = 8
+  - log_2(value) = exponent <=> 2^exponent = value
+
+- Logarithms in Time Complexity
+  - Certain Searching Algorithm
+  - Effcient Sorting Algorithm
+  - Recursions 
