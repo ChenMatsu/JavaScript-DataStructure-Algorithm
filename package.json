@@ -2,7 +2,7 @@
   "name": "javascript-datastructure-algorithm",
   "version": "1.0.0",
   "description": "- Objective:\r   - What BigO Notaion is?\r   - What Logarithm is?\r   - BigO Expressions\r   - \"Time Complexity\" and \"Space Complexity\"\r   - Evaluate using BigO Noation\r - Concerns:\r   - Have a **precise** vocabulary to talk about code performs\r   - Useful for discussing **trade-offs** between different approaches\r   - Find pain points in applications\r ---\r - What Does Better Mean?\r   - Faster?\r   - Less Memory-Intensive?\r   - More Readable?",
-  "main": "sum.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
