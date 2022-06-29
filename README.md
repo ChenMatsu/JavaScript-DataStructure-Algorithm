@@ -1,14 +1,17 @@
-# 04-Problem-Solving-Pattern
+# Recursion
+> A process that calls itself
 
-- How to improve?
-  - Devise a plan for solving problems
-  - Master common problem solving patterns
+1. JSON.parse() | JSON.stringify()
+2. document.getElementById | DOM Traversal Algorithm
+3. Object Traversal
 
-- Patterns
-  - Frequency Counter
-  - Multiple Pointers
-  - Sliding Window
-  - Divide and Conquer
-  - Dynamic Programming
-  - Greedy Algorithm
-  - Backtracking
+## Call Stack
+> Once function invoked it is placed to the top of stack
+
+## Requirement
+- Base Case: stop flag
+- Different Input
+
+## Pitfall
+- No Base Case
+- Return Wrong Stuff
