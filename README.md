@@ -1,7 +1,6 @@
-# Selection Sort
-> Swap with the targeted condition value
+# Insertion Sort
 
 - Time Complexity
-  - Worst => O(n^2)
-  - Average => O(n^2)
-  - Best => O(n^2)
+  - Worst: O(n^2)
+  - Average: O(n^2)
+  - Best: O(n)
