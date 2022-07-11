@@ -1,6 +1,9 @@
-# Insertion Sort
+# Merge Sort
+> Combination of two things - merging and sorting
 
 - Time Complexity
-  - Worst: O(n^2)
-  - Average: O(n^2)
-  - Best: O(n)
+  - Worst: O(nlogn)
+  - Average: O(nlogn)
+  - Best: O(nlogn)
+- Space Complexity
+  - O(n)
