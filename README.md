@@ -1,6 +1,5 @@
-# Quick Sort
+# Radix Sort
+> Not making any comparison
 
-- Time Complexity
-  - Worst: O(n^2) => O(n) decompositions + O(n) comparisons per decomposition
-  - Average: O(nlogn)
-  - Best: O(nlogn)
+- Procedure
+  - Group into Digit Buckets
