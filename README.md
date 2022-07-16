@@ -1,23 +1,36 @@
-# Stack and Queue
+# Trees
 
-## Stack
-> LIFO (Last-In-First-Out)
-- Manage Function Invocation
-- Undo / Redo
-- Browser History Routing
-- Time Complexify
-  - Insertion: O(1)
-  - Removal: O(1)
-  - Search: O(N)
-  - Access: O(N)
+> Parent / child relationship between nodes
 
-## Queue
-> FIFO (First-In-First-Out)
-- Background Tasks
-- Uploading Resources
-- Printing / Task Processing
-- Time Complexify
-  - Insertion: O(1)
-  - Removal: O(1)
-  - Search: O(N)
-  - Access: O(N)
+-   List: Linear
+-   Trees: Nonlinear
+
+## Terminology
+
+-   Root: Top node in tree
+-   Child: Node directly connected to another node
+-   Parent: The converse notion of a child
+-   Sibling: Group of nodes with same parent
+-   Leaf: A node with no children
+-   Edge: Connection between nodes
+
+## Application
+
+-   HTML DOM
+-   Network Routing
+-   Abstracy Syntax Tree
+-   Artificial Intelligence => Min-Max Tree
+-   OS Folder
+-   JSON
+
+## Kinds
+
+-   Trees
+-   Binary Tree
+-   Binary Search Tree
+    -   At most two children
+    -   Left child is less than parent
+    -   Right child is greater than parent
+    -   Time Complexity (Not gauranteed)
+        - Insertion: O(log N)
+        - Search: O(log N)
