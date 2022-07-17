@@ -41,38 +41,6 @@ class BinarySearchTree {
                 }
             }
         }
-
-        // if (this.compare(newNode, this.root)) {
-        //     // Larger
-        //     if (!this.root.left) {
-        //         this.root.left = newNode;
-        //     } else {
-        //         let targetNode = this.root;
-        //         while (targetNode.left) {
-        //             if (this.compare(newNode, targetNode)) {
-        //                 targetNode = targetNode.right;
-        //             } else {
-        //                 targetNode = targetNode.left;
-        //             }
-        //         }
-        //         targetNode = newNode;
-        //     }
-        // } else {
-        //     // Smaller
-        //     if (!this.root.right) {
-        //         this.root.right = newNode;
-        //     } else {
-        //         let targetNode = this.root;
-        //         while (targetNode.right) {
-        //             if (this.compare(newNode, targetNode)) {
-        //                 targetNode = targetNode.left;
-        //             } else {
-        //                 targetNode = targetNode.right;
-        //             }
-        //         }
-        //         targetNode = newNode;
-        //     }
-        // }
     }
 
     find(value) {
@@ -91,6 +59,48 @@ class BinarySearchTree {
             }
         }
     }
+
+    DFSPreorder() {
+        const visited = [];
+        let currentNode = this.root;
+
+        function traverse(node) {
+            visited.push(node.value);
+            if (node.left) traverse(node.left);
+            if (node.right) traverse(node.right);
+        }
+
+        traverse(currentNode);
+        return visited;
+    }
+
+    DFSInorder() {
+        const visited = [];
+        let currentNode = this.root;
+
+        function traverse(node) {
+            if (node.left) traverse(node.left);
+            visited.push(node.value);
+            if (node.right) traverse(node.right);
+        }
+
+        traverse(currentNode);
+        return visited;
+    }
+
+    DFSPostorder() {
+        const visited = [];
+        let currentNode = this.root;
+
+        function traverse(node) {
+            if (node.left) traverse(node.left);
+            if (node.right) traverse(node.right);
+            visited.push(node.value);
+        }
+
+        traverse(currentNode);
+        return visited;
+    }
 }
 
 const tree = new BinarySearchTree();
@@ -100,4 +110,13 @@ tree.insert(12);
 tree.insert(21);
 tree.insert(4);
 tree.insert(37);
+/**
+ *     10
+ *    9  12
+ *  4      21
+ *           37
+ */
 console.log(tree.find(21));
+console.log(tree.DFSPreorder());
+console.log(tree.DFSInorder());
+console.log(tree.DFSPostorder());
