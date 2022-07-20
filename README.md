@@ -1,11 +1,22 @@
-# Binary Heap
-> Another category of tree
+# Hash Table
 
-- MaxBinaryHeap
-  - Parent nodes are always larger
-- MinBinaryHeap
-  - Parent nodes are always smaller
-- Time Complexity
-  - Insertion: O(log N)
-  - Removal: O(log N)
-  - Search: O(N)
+> Used to store key-value pairs
+
+-   Feature
+    -   Keys are not ordered
+
+---
+
+-   Languages
+    -   Python: Dictionary
+    -   JS: Objects and Maps
+    -   Java, Go & Scala: Maps
+    -   Ruby: Hashes
+
+---
+
+-   Theorem
+    -   Hash Function
+    -   Handling Collision: Collisions are inevitable
+        -   Seperate Chaining
+        -   Linear Probing
