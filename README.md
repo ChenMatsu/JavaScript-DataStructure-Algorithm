@@ -1,29 +1,38 @@
-# Hash Table
+# Graph
 
-> Used to store key-value pairs
+> Nodes + Connections
 
--   Feature
-    -   Keys are not ordered
+## Use Cases
 
----
+-   Social Networks
+-   Location / Mapping
+-   Routing Algorithm
+-   Visual Hierarchy
+-   File System Operations
+-   More...
 
--   Languages
-    -   Python: Dictionary
-    -   JS: Objects and Maps
-    -   Java, Go & Scala: Maps
-    -   Ruby: Hashes
+## Types of Graph
 
----
+-   Terminology
+    -   Vertex: A Node
+    -   Edge: Connection between nodes
+-   Graphs
+    -   Undirected / directed Graph
+    -   Unweighted / weighted Graph
 
--   Theorem
-    -   Hash Function
-    -   Handling Collision: Collisions are inevitable
-        -   Seperate Chaining
-        -   Linear Probing
+## Store Graph
 
----
+-   Adjacency Matrix
+    -   Takes up more space (sparse matrix)
+    -   Slower to iterate over all edges
+-   Adjacency List
+    -   Can be slower to look up specific edge
 
--   Time Complexity (Depends on how good Hash function is)
-    -   Insert: O(1)
-    -   Deletion: O(1)
-    -   Access: O(1)
+| Operation     | Adjacency List | Adjacency Matrix |
+| ------------- | -------------- | ---------------- |
+| Add Vertex    | O(1)           | O(V^2)           |
+| Add Edge      | O(1)           | O(1)             |
+| Remove Vertex | O(V + E)       | O(V^2)           |
+| Remove Edge   | O(E)           | O(1)             |
+| Add Query     | O(V + E)       | O(1)             |
+| Storage       | O(V + E)       | O(V^2)           |
