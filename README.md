@@ -36,3 +36,40 @@
 | Remove Edge   | O(E)           | O(1)             |
 | Add Query     | O(V + E)       | O(1)             |
 | Storage       | O(V + E)       | O(V^2)           |
+
+## Traversal
+
+-   Use cases
+    -   Peer to peer networking
+    -   Web crawler
+    -   Finding "closest" matches
+    -   Shortes Path
+        -   GPS Navigation
+        -   Solving Maze
+        -   AI
+
+## DFS Traversal
+
+```
+<!-- Recursive -->
+DFS(vertex):
+    if vertex is empty
+        return
+    add vertex to results list
+    mark vertex as visited
+    for each neighbor in vertex's neighbors:
+        if neighbor is not visited:
+            recursively call DFS on neighbor
+
+<!-- Iterative -->
+DFS(vertex):
+    let S be a stack
+    S.push(start)
+    while S is not empty
+        vetex = S.pop()
+        if vertex is not labeled as discovered:
+            visit vertex
+            label vertex as discovered
+            for each of vertex's neighbors, N do 
+                S.push(N)
+```
