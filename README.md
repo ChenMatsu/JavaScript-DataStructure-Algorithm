@@ -61,7 +61,7 @@ DFS(vertex):
         if neighbor is not visited:
             recursively call DFS on neighbor
 
-<!-- Iterative -->
+<!-- Iterative[Stack] -->
 DFS(vertex):
     let S be a stack
     S.push(start)
@@ -72,4 +72,11 @@ DFS(vertex):
             label vertex as discovered
             for each of vertex's neighbors, N do 
                 S.push(N)
+```
+
+## BFS Traversal
+``` 
+<!-- [Queue] -->
+BFS(vertex): 
+    
 ```

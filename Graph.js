@@ -75,6 +75,27 @@ class Graph {
 
         return results;
     }
+
+    BFS(start) {
+        const queue = [start];
+        const visitedNodesList = [];
+        const visitedNodesObj = {};
+
+        visitedNodesObj[start] = true;
+        while (queue.length) {
+            const currentVertex = queue.shift();
+            visitedNodesList.push(currentVertex);
+
+            this.adjacencyList[currentVertex].forEach((neighbor) => {
+                if (!visitedNodesObj[neighbor]) {
+                    visitedNodesObj[neighbor] = true;
+                    queue.push(neighbor);
+                }
+            });
+        }
+
+        return visitedNodesList;
+    }
 }
 
 const graph = new Graph();
@@ -102,6 +123,7 @@ graph.addEdge("E", "F");
 
 console.log(graph.DFSR("A"));
 console.log(graph.DFSI("A"));
+console.log(graph.BFS("A"));
 
 /**
  *          A
